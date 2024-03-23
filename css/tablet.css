@@ -1,0 +1,5 @@
+/* dropdown */
+
+.dropdown:active .dropdown-content {
+    display: block;
+}

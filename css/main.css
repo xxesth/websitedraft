@@ -1,0 +1,268 @@
+body{
+    background-color: #EDEDED;
+}
+/* header{
+    height: 13%;
+    width: 100%;
+} */
+header h1{
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    color: #F5FF2F;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: inline-block;
+}
+#navbar{
+    padding-right: 14%;
+    padding-left: 14%;
+    padding-bottom: 0;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#navbar a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px;
+    color: #EDEDED;
+    border-radius: 5px;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+#navbar a:hover{
+    background-color: #033ba2b5;
+}
+/* navbar dropdown */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0.3rem;
+    background-color: #1B69F9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #033ba2b5}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  } */
+
+
+    /* aside left */
+.asideleft{
+    position:absolute;
+    top: 12%;
+    left: 0.6vw;
+    width: 14%;
+}
+.asideleft h4{
+    margin-top: 1.2rem;
+}
+.asideleft ul li{
+    padding: 0.3rem;
+    margin: 0.3rem 0;
+    border-radius: 5px;
+}
+.asideleft ul li a{
+    color: black;
+    font-size: 1.2rem;
+}
+.asideleft ul li:hover{
+    background-color: rgb(177, 177, 177);
+}
+    /* section */
+section{
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 1%;
+}
+section h2{
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+    /* aside right */
+.asideright{
+    position:absolute;
+    top: 12%;
+    right: 0.6vw;
+    width: 14%;
+}
+.asideright h4{
+    margin-top: 1.2rem;
+}
+.asideright p{
+    margin-top: 0.5rem;
+}
+
+footer{
+    padding: 1rem 2rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 10rem;
+    margin-bottom: 0;
+    background-color: #1A1A1A;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer2{
+    display: flex;
+    justify-content: center;
+}
+.footer2 a{
+    padding: 0 1rem;
+}
+
+footer p{
+    color: #EDEDED;
+    opacity: 0.7;
+}
+footer h5{
+    color: wheat;
+}
+
+/* tab */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+.tablinks{
+    font-size: 1rem;
+    font-weight: bold;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    /* fade */
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .tabfooter{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    /* border-top: none; */
+    background-color: #dedede;
+  }
+
+/* tabcontent inside*/
+.places{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-content:space-between; */
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+}
+.place{
+    display: flex;
+}
+.place-info{
+    display: flex;
+    flex-direction: column;
+}
+.places h2{
+    display: inline-block;
+}
+
+.places img{
+    width: 100px;
+    height: 100px;
+}
+
+/* table */
+.holidaysarticle{
+    margin-top: 1.5rem;
+    display: flex;
+}
+.holidaystable{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.holidaysinfo{
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    /* width: 100%; */
+    font-size: 2em;
+}
+th,td{
+    padding: 10px;
+}
+tbody tr{
+    text-align: center;
+}
